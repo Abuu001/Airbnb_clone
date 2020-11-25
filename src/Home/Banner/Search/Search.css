@@ -1,0 +1,44 @@
+.search{
+    position: absolute;
+    top: 35px;
+    left: 25%;
+    /* width: 100vw; */
+}
+.search  > h2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    left: 0;
+    z-index: 100;
+    top: 380px;
+    background-color: white;
+}
+.search  > input:focus{
+    outline: none;
+}
+.search  > button{
+    position: absolute;
+    left: 0;
+    top: 480px;
+    text-transform: inherit !important;
+    background-color: #ff7779;
+    color: white;
+    width: 579px;
+    z-index: 100;
+}
+.search  > button:hover{
+    color: #ff7779;
+    background-color: white;
+}
+@media(max-width: 542px){
+    .search{
+        left: 0;
+    }
+    .search__DatePicker{
+        width: 12px !important;
+    }
+    .search  > button{
+        width: 300px;
+    }
+}
